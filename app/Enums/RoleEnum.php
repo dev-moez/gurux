@@ -14,7 +14,7 @@ enum RoleEnum: string
 {
     case ROLE_SUPER_ADMIN = 'super admin';
     case ROLE_ADMIN = 'admin';
-    case ROLE_ACCOUNT = 'account';
+    case ROLE_CREATOR = 'creator';
 
     /**
      * Return an array of all roles.
