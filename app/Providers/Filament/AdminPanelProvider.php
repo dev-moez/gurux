@@ -30,7 +30,7 @@ class AdminPanelProvider extends PanelProvider
             ->passwordReset()
             ->profile(isSimple: false)
             ->colors([
-                'primary' => Color::Teal,
+                'primary' => Color::Indigo,
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
@@ -57,6 +57,8 @@ class AdminPanelProvider extends PanelProvider
             ->databaseNotificationsPolling(60)
             ->databaseTransactions()
             ->revealablePasswords()
-            ->spa();
+            ->spa()
+            ->brandLogo(asset('images/logo.png'))
+            ->brandLogoHeight("60px");
     }
 }
