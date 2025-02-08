@@ -23,11 +23,7 @@ enum RoleEnum: string
      */
     public static function all(): array
     {
-        return [
-            self::ROLE_SUPER_ADMIN,
-            self::ROLE_ADMIN,
-            self::ROLE_ACCOUNT,
-        ];
+        return self::cases();
     }
 
     /**
